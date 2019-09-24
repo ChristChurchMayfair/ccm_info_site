@@ -56,7 +56,22 @@ export class Services extends Component<Props, State> {
 
     drawDay(servicesByDay: { [date: string]: Service[] }, day: string, seriesClasses: {[seriesName: string]: string}) {
         if (day in servicesByDay) {
-            return servicesByDay[day].map(service => {
+            var daysServices = servicesByDay[day]
+            daysServices.sort(function(firstService: Service, secondService: Service ) {
+
+                var firstDate = new Date(secondService.date)
+                var [firstServiceHour, firstServiceMinutes] = firstService.time.split(":", 2).map(str => parseInt(str))
+                firstDate.setHours(firstServiceHour)
+                firstDate.setMinutes(firstServiceMinutes)
+
+                var secondDate = new Date(secondService.date)
+                var [secondServiceHour, secondServiceMinutes] = secondService.time.split(":", 2).map(str => parseInt(str))
+                secondDate.setHours(secondServiceHour)
+                secondDate.setMinutes(secondServiceMinutes)
+                return firstDate.getTime() - secondDate.getTime()
+            })
+
+            return daysServices.map(service => {
                 let serviceName = serviceTimeToServiceName[service.time]
                 return <ServiceView key={service.id} service={service} showDate={false} serviceData={serviceName} showSeries={true} seriesClass={seriesClasses[service.series ? service.series.title : ""]}></ServiceView>
             })
