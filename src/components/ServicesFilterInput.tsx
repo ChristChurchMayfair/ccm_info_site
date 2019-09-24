@@ -72,7 +72,7 @@ export class ServicesFilterInput extends Component<Props, State> {
             <div className="filterButtons">
             {this.props.exclusiveFilters.map(filter => {
                 let filterButtonClass = this.state.enabledFilter !== filter ? "disabled" : "enabled"
-                return <button key={filter.name} className={filterButtonClass} onClick={() => this.handleClick(filter)}>{filter.name}</button>
+                return <button key={filter.name} className={[filterButtonClass, "serviceFilter"].join(" ")} onClick={() => this.handleClick(filter)}>{filter.name}</button>
             })}
             {showPastButton}
             </div>

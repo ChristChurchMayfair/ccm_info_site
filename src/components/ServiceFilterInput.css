@@ -60,6 +60,12 @@ button {
     }
 }
 
+@media only screen and (min-width:968px) {
+    button.serviceFilter {
+        display: none;
+    }
+}
+
 button.enabled {
     background-color: green
 }
