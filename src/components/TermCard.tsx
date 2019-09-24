@@ -72,8 +72,11 @@ export class TermCard extends Component<Props, State> {
         let season = <SeriesServices title="Christmas at Christ Church" contentfulClient={this.props.contentfulClient} seriesName="Christmas 2019" filters={[]}></SeriesServices>
 
         return <div className="termcard">
-            <h1>{this.props.termName}</h1>
-            <ServicesFilterInput includePastFilterOption={true} onUpdateShowPast={this.updateShowPast} exclusiveFilters={serviceFilters} onUpdate={this.updateFilter}></ServicesFilterInput>
+            <div className="heading">
+                <div></div>
+                <h1>{this.props.termName}</h1>
+                <ServicesFilterInput includePastFilterOption={true} onUpdateShowPast={this.updateShowPast} exclusiveFilters={serviceFilters} onUpdate={this.updateFilter}></ServicesFilterInput>
+            </div>
             {services}
             {season}
         </div>
