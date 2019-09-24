@@ -1,0 +1,73 @@
+.filters {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+}
+
+@media only screen and (max-width:968px) {
+    .filters {
+        grid-template-columns: 1fr;
+    }
+}
+
+.filterButtons {
+    font-family: "Klinic Slab";
+        font-size: 1.4em;
+        font-weight: 500;
+        color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+@media only screen and (max-width:968px) {
+    .filterButtons {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
+button {
+    display: inline-block;
+        border: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0;
+        text-decoration: none;
+        background: #0069ed;
+        color: #ffffff;
+        font-family: "Klinic Slab";
+        font-size: 1em;
+        font-weight: 500;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, 
+                    transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+}
+
+@media only screen and (max-width:968px) {
+    button {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+button.enabled {
+    background-color: green
+}
+
+button.disabled {
+    background-color: gray
+}
+
+/* button.disabled::after {
+    content: url('..images/gluten_free.png');
+  } */

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Klinic Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/klinicslabmedium.otf)
+  }
+  
+  @font-face {
+    font-family: 'Klinic Slab';
+    font-style: italic;
+    font-weight: 400;
+    src: url(/fonts/klinicslabmediumit.otf)
+  }
+  
+  @font-face {
+    font-family: 'Klinic Slab';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/klinicslabbold.otf)
+  }
+  
+  @font-face {
+    font-family: 'Klinic Slab';
+    font-style: italic;
+    font-weight: 700;
+    src: url(/fonts/klinicslabboldit.otf)
+  }
+  
+  @font-face {
+    font-family: 'Klinic Slab';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/klinicslabbook.otf)
+  }
+  
+  @font-face {
+    font-family: 'Klinic Slab';
+    font-style: italic;
+    font-weight: 300;
+    src: url(/fonts/klinicslabbookit.otf)
+  }
+  
+  @font-face {
+    font-family: 'Klinic Slab';
+    font-style: normal;
+    font-weight: 200;
+    src: url(/fonts/klinicslablight.otf)
+  }
+  
+  @font-face {
+    font-family: 'Klinic Slab';
+    font-style: italic;
+    font-weight: 200;
+    src: url(/fonts/klinicslablightit.otf)
+  }
+  
+  @font-face {
+    font-family: Franchise;
+    src: url(/fonts/franchise-bold-hinted.ttf)
+  }
+  
+  

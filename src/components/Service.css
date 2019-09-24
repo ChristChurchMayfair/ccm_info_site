@@ -1,0 +1,119 @@
+    .service {
+        /* border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: black; */
+    }
+
+.service {
+        font-family: 'Klinic Slab';
+        /* border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px; */
+    }
+
+    @media only screen and (min-width:968px) {
+        .day .service.morning {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1
+        }
+
+        .day .service.evening {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1
+        }
+    }
+    
+    .service .time, .service .date {
+        font-weight: 300;
+        font-size: 1.4em;
+        padding-bottom: 0px;
+    }
+    
+.service .title {
+        font-weight: 1000;
+        font-size: 1.4em;
+        padding-bottom: 0px;
+    }
+
+    .day .service .biblepassage {
+        font-weight: 400;
+        font-size: 1.4em;
+        padding-bottom: 10px;
+    }
+
+    .services .series.one {
+        background-color: red;
+    }
+
+    .services .series.two {
+        background-color: orange;
+    }
+
+    .services .series.three {
+        background-color: purple;
+    }
+    
+    .day .service .series {
+        color: white;
+        font-weight: 400;
+        font-size: 1em;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        padding-top: 0.2em;
+        padding-bottom: 0.1em;
+        margin-bottom: 5px;
+        display: inline-block;
+        border-radius: 2px;
+    }
+
+    .service .note {
+        color: white;
+        background-color: black;
+        font-weight: 400;
+        font-size: 1em;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        padding-top: 0.2em;
+        padding-bottom: 0.1em;
+        margin-bottom: 5px;
+        display: inline-block;
+        border-radius: 2px;
+    }
+
+    .service .name {
+        display: none;
+        color: white;
+        font-weight: 400;
+        font-size: 1em;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        padding-top: 0.2em;
+        padding-bottom: 0.1em;
+        border-radius: 2px;
+        margin-bottom: 5px;
+    }
+
+    .service .time, .service .name, .service .date, .service .note {
+        display: inline-block;
+    }
+
+
+    .service .name.morning {
+        background-color: #58d178;
+    }
+
+    .service .name.evening {
+        background-color: #d1588a;
+    }
+    
+    @media only screen and (max-width:968px) {
+
+        .service {
+            padding-left: 10px;
+            border-left-style: solid;
+            border-left-width: 2px;
+            border-left-color: black;
+        }
+    }

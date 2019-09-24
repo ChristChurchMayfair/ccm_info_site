@@ -1,0 +1,57 @@
+.normalServices {
+    padding-bottom: 30px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+}
+
+.servicesHeadings {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-column-gap: 30px;
+    font-family: 'Franchise';
+    font-weight: 100;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.day {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    /* border-color: black;
+border-width: 1px;
+border-style: solid; */
+}
+
+.day .service,
+.servicesHeadings .heading {
+    justify-self: left;
+}
+
+.day .date {
+    justify-self: right;
+    font-family: 'Klinic Slab';
+    font-weight: 900;
+    font-size: 2em;
+}
+
+
+
+
+
+@media only screen and (max-width:968px) {
+    .day {
+        grid-template-columns: 1fr;
+    }
+    .servicesHeadings {
+        display: none;
+    }
+    .day .date {
+        justify-self: left;
+    }
+}

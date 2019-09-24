@@ -1,0 +1,49 @@
+.series .headings {
+    display: grid;
+        grid-template-columns: 1fr 3fr 3fr;
+        grid-column-gap: 30px;
+}
+
+.series .headings div {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-family: 'Klinic Slab';
+    font-weight: 900;
+    font-size: 2em;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 30px
+}
+
+.series .services {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-column-gap: 30px;
+    grid-auto-flow: column;
+}
+
+.series .services .service:nth-child(odd) {
+    grid-column-start: 2
+}
+
+.series .services .service:nth-child(even) {
+    grid-column-start: 3
+}
+
+@media only screen and (max-width:968px) {
+    .series .services {
+        grid-template-columns: 1fr;
+    }
+    .series .headings {
+        grid-template-columns: 1fr;
+    }
+
+    .series .headings div {
+        grid-column-start: 1;
+    }
+
+    .series .services .service:nth-child(odd), .series .services .service:nth-child(even) {
+        grid-column-start: 1;
+    }
+}
