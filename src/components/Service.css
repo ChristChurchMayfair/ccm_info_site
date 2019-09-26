@@ -38,21 +38,9 @@ border-bottom-color: black; */
     }
 
     .day .service .biblepassage {
-        font-weight: 400;
+        font-weight: 300;
         font-size: 1.4em;
         padding-bottom: 10px;
-    }
-
-    .services .series.one {
-        background-color: red;
-    }
-
-    .services .series.two {
-        background-color: orange;
-    }
-
-    .services .series.three {
-        background-color: purple;
     }
     
     .day .service .series {
@@ -66,11 +54,29 @@ border-bottom-color: black; */
         margin-bottom: 5px;
         display: inline-block;
         border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .services .series.one {
+        --series-color: rgba(200,60,20,0.5);
+        background-color: var(--series-color);
+        border-color: var(--series-color);
+        color: black;
+    }
+
+    .services .series.two {
+        background-color: orange;
+        border-color: orange;
+    }
+
+    .services .series.three {
+        background-color: purple;
+        border-color: purple;
     }
 
     .service .note {
-        color: white;
-        background-color: black;
+        color: black;
         font-weight: 400;
         font-size: 1em;
         padding-left: 0.4em;
@@ -80,6 +86,9 @@ border-bottom-color: black; */
         margin-bottom: 5px;
         display: inline-block;
         border-radius: 2px;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
     }
 
     .service .name {
@@ -100,12 +109,19 @@ border-bottom-color: black; */
     }
 
 
-    .service .name.morning {
-        background-color: #58d178;
+    .service .name.morning, .service .name.evening {
+        background-color: white;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        color: black;
+        box-sizing: border-box;
     }
 
-    .service .name.evening {
-        background-color: #d1588a;
+    @media only screen and (min-width:968px) {
+        .service .name {
+            display: none
+        }
     }
     
     @media only screen and (max-width:968px) {

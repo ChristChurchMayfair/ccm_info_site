@@ -54,7 +54,7 @@ export class ServiceView extends Component<Props,State> {
 
         let timeOrName
         if (this.props.serviceData) {
-            timeOrName = <div className={["name",this.props.serviceData.className].join(" ")}>{this.props.serviceData.display}</div>
+            timeOrName = <div className={["name",this.props.serviceData.className].join(" ")}>{this.props.service.time}</div>
         } else {
             timeOrName = <div className="time">{this.props.service.time}</div>
         }

@@ -21,11 +21,11 @@ type State = {
 
 let serviceFilters: ServiceFilter[] = [
     {
-        name: "Show Morning Services Only",
+        name: "10:15",
         filter: (service: Service) => { return service.time === "10:15" }
     },
     {
-        name: "Show Evening Services Only",
+        name: "18:00",
         filter: (service: Service) => { return service.time === "18:00" }
     }
 ]
@@ -73,7 +73,11 @@ export class TermCard extends Component<Props, State> {
 
         return <div className="termcard">
             <div className="heading">
-                <div></div>
+                <a className="logo" href="/">
+                    <svg viewBox="0 0 163 163">
+                        <use  xlinkHref="images/ccm-logo-square.svg#ccm-logo-square" />
+                    </svg>
+                </a>
                 <h1>{this.props.termName}</h1>
                 <ServicesFilterInput includePastFilterOption={true} onUpdateShowPast={this.updateShowPast} exclusiveFilters={serviceFilters} onUpdate={this.updateFilter}></ServicesFilterInput>
             </div>
