@@ -19,6 +19,7 @@ export type Service = {
 }
 
 export type Term = {
+    title: string
     startDate: Date
     endDate: Date
 }

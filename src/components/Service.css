@@ -46,7 +46,7 @@ border-bottom-color: black; */
     .day .service .series {
         color: white;
         font-weight: 400;
-        font-size: 1em;
+        font-size: 0.9em;
         padding-left: 0.4em;
         padding-right: 0.4em;
         padding-top: 0.2em;
@@ -59,10 +59,10 @@ border-bottom-color: black; */
     }
 
     .services .series.one {
-        --series-color: rgba(200,60,20,0.5);
+        --series-color: rgba(200,60,20,1);
         background-color: var(--series-color);
         border-color: var(--series-color);
-        color: black;
+        color: white;
     }
 
     .services .series.two {
@@ -78,7 +78,7 @@ border-bottom-color: black; */
     .service .note {
         color: black;
         font-weight: 400;
-        font-size: 1em;
+        font-size: 0.9em;
         padding-left: 0.4em;
         padding-right: 0.4em;
         padding-top: 0.2em;
@@ -95,7 +95,7 @@ border-bottom-color: black; */
         display: none;
         color: white;
         font-weight: 400;
-        font-size: 1em;
+        font-size: 0.9em;
         padding-left: 0.4em;
         padding-right: 0.4em;
         padding-top: 0.2em;

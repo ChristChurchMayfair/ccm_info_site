@@ -14,7 +14,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <div></div>
-      <TermCard termName="Autumn 2019" contentfulClient={contentful}/>
+      <TermCard contentfulClient={contentful}/>
       <div></div>
     </div>
   );
