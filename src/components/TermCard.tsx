@@ -6,7 +6,6 @@ import "./TermCard.css"
 import { BallClipRotate } from 'react-pure-loaders';
 import { SeriesServices } from './Series';
 import { Service, Term } from './Types';
-import { tsModuleDeclaration } from '@babel/types';
 
 type Props = {
     termName?: string

@@ -92,12 +92,15 @@ export class Services extends Component<Props, State> {
         }, {})
 
         let now = new Date()
+        let toleranceInHours = 24
+        let toleranceInMilliseconds = toleranceInHours * 60 * 60 * 1000;
         let servicesToDraw = this.state.services
             .filter(service => {
                 if (this.props.showPastServices) {
                     return true
                 } else {
-                    return (new Date(service.date) > now)
+                    let diff = new Date(service.date).getTime() - now.getTime()
+                    return (diff > -toleranceInMilliseconds)
                 }
             })
             .filter(service => {

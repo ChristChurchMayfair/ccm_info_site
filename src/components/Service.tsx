@@ -49,7 +49,7 @@ export class ServiceView extends Component<Props,State> {
             return <div key={biblePassage} className="biblepassage">{biblePassage}</div>
         })
         } else {
-            passages = <div className="biblepassage">None</div>
+            passages = <div className="biblepassage"><br/></div>
         }
 
         let timeOrName
